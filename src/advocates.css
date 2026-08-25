@@ -1,0 +1,6 @@
+.stage>.dark,.stage>.photo,.stage>.mark{width:184px!important;height:225px!important;border-radius:8px!important;border:7px solid transparent!important;box-shadow:0 12px 24px #1c1c2112!important}
+.stage>.dark{left:105px!important;top:35px!important;background:linear-gradient(#ffc928,#ffc928) padding-box,url('/advocate-woman-standing.png') center 24%/cover!important;background-image:url('/advocate-woman-standing.png')!important;border-color:#ffc928!important}
+.stage>.photo{left:50%!important;top:78px!important;transform:translateX(-50%)!important;background:url('/advocate-man.png') center 22%/cover!important;border-color:#9a78cb!important}
+.stage>.photo>img{display:none!important}.stage>.mark{left:auto!important;right:105px!important;top:35px!important;background:url('/advocate-woman-tablet.png') center 24%/cover!important;border-color:#39afc5!important}
+.stage>.photo:after{bottom:-36px!important}.stage:before,.stage:after{z-index:0!important}.stage>.dark,.stage>.photo,.stage>.mark{z-index:2!important}
+@media(max-width:700px){.stage>.dark,.stage>.photo,.stage>.mark{width:125px!important;height:168px!important;border-width:5px!important}.stage>.dark{left:0!important;top:38px!important}.stage>.photo{left:50%!important;top:72px!important}.stage>.mark{right:0!important;top:38px!important}.stage>.photo:after{bottom:-29px!important}}
