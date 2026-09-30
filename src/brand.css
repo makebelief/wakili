@@ -10,3 +10,97 @@ footer>.logo{width:min(280px,100%);height:100px;object-fit:contain;background:#f
 @media(max-width:900px){header>.logo{width:155px}.brand-film{margin:0 20px 70px}.brand-film-copy{padding:18px 20px}.brand-animation{height:43vw;min-height:230px}}
 @media(max-width:700px){header>.logo{width:145px;height:58px}.brand-film-copy{display:block}.brand-film-copy p{margin-top:7px}.brand-animation{height:58vw;min-height:220px}.brand-animation img{width:140%;max-width:none}.brand-film{border-radius:14px}}
 @media(prefers-reduced-motion:reduce){.brand-gif{display:none}.brand-still{display:block!important;width:90%!important;height:auto!important;object-fit:contain!important}}
+
+
+/* WAKILI_PORTFOLIO_ANIMATION_MOBILE_PATCH */
+.brand-animation{
+  height:auto!important;
+  min-height:0!important;
+  overflow:hidden!important;
+  display:grid!important;
+  place-items:center!important;
+  background:#fff!important;
+}
+.brand-animation .brand-gif,
+.brand-animation img{
+  grid-area:1/1!important;
+  width:100%!important;
+  max-width:100%!important;
+  height:auto!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  transform:none!important;
+}
+.brand-film{
+  max-width:calc(100% - 8%)!important;
+}
+html,body,#root{
+  max-width:100%;
+  overflow-x:hidden;
+}
+@media (max-width:900px){
+  .brand-film{
+    max-width:none!important;
+    margin-left:20px!important;
+    margin-right:20px!important;
+  }
+  .brand-animation{
+    height:auto!important;
+    min-height:0!important;
+  }
+  .brand-animation img{
+    width:100%!important;
+    max-width:100%!important;
+    height:auto!important;
+  }
+}
+@media (max-width:700px){
+  header{
+    max-width:100%!important;
+  }
+  .hero,
+  .intro,
+  .services,
+  .tools,
+  .contact,
+  .firm{
+    max-width:100%!important;
+  }
+  .brand-film{
+    margin:0 12px 56px!important;
+    border-radius:14px!important;
+  }
+  .brand-film-copy{
+    padding:16px!important;
+  }
+  .brand-film-copy p{
+    margin-top:7px!important;
+  }
+  .brand-animation{
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+  }
+  .brand-animation .brand-gif,
+  .brand-animation img{
+    width:100%!important;
+    max-width:100%!important;
+    height:auto!important;
+    object-fit:contain!important;
+  }
+  .services>a{
+    min-width:0!important;
+    overflow:hidden!important;
+  }
+  .services h3{
+    min-width:0!important;
+    overflow-wrap:anywhere!important;
+  }
+  .actions{
+    flex-wrap:wrap!important;
+  }
+  .actions a{
+    flex:1 1 150px!important;
+    text-align:center!important;
+  }
+}
